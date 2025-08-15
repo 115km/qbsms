@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Google Fonts for a clean, modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        /* --- General Styling & Mobile-First Approach --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fffaf5; /* Light beige background from the image */
+            padding: 1rem; /* Add some padding for smaller screens */
+        }
+
+        /* --- Main Container --- */
+        .main-container {
+            width: 100%;
+            max-width: 420px; /* Slightly wider to accommodate content */
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* --- Logo --- */
+        .logo {
+            margin-bottom: 1.5rem;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            /* Gradient text effect to match brand */
+            background: linear-gradient(90deg, #f58220, #fdbb2d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-top: -10px;
+        }
+
+        /* --- Page Header --- */
+        .page-header h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        /* --- Form Elements --- */
+        .input-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px 12px 12px 40px; /* Left padding for icon */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #fff;
+            transition: border-color 0.3s;
+        }
+
+        .input-field::placeholder {
+            color: #aaa;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #19c5ce; /* Highlight color on focus */
+        }
+
+        /* --- Action Button --- */
+        .action-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #19c5ce; /* Cyan color from image */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .action-btn:hover {
+            background-color: #f9b00; /* Slightly darker shade for hover */
+        }
+        
+        /* --- Login Link --- */
+        .login-link {
+            margin-top: 2rem;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .login-link a {
+            color: #19c5ce;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="#" alt="QuexBook Logo"> <!-- add logo -->
+            <h1>QuexBook</h1>
+        </div>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h2>Let's Create Your Account!</h2>
+        </div>
+
+        <!-- Registration Form -->
+        <form>
+            <div class="input-group">
+                <i class="fas fa-user" style="color:#f38100"></i>
+                <input type="text" class="input-field" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope" style="color:#f38100"></i>
+                <input type="email" class="input-field" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock" style="color:#f38100"></i>
+                <input type="password" class="input-field" placeholder="Password" required>
+            </div>
+            
+            <button type="submit" class="action-btn">Create Account</button>
+        </form>
+
+        <!-- Login Link -->
+        <p class="login-link">
+            Already have an account? <a href="login.html">Log In</a>
+        </p>
+    </div>
+
+</body>
+</html
